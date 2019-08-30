@@ -5,7 +5,7 @@ import Contaier from './app-styled'
 const App: React.FC = () => {
   return (
     <Contaier>
-      app
+      c
     </Contaier>
   );
 }
