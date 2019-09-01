@@ -12,5 +12,6 @@
           },
           
         ],
-        "typescript.tsc.autoDetect": "off"
+        "typescript.tsc.autoDetect": "on",
+        "eslint.lintTask.enable": true
 }

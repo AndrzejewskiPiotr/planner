@@ -1,0 +1,79 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "react-app",
+        "airbnb-typescript",
+        "react-hooks",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "prettier/react"
+    ],
+    "plugins": ["@typescript-eslint", "react"],
+    "rules": {
+        "comment-format": [true, "check-space"],
+        "interface-name": [true, "never-prefix"],
+        "member-ordering": [
+            true,
+            "public-before-private",
+            "static-before-instance",
+            "variables-before-functions"
+        ],
+        "one-line": [
+            true,
+            "check-catch",
+            "check-else",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "quotemark": [true, "single", "jsx-double"],
+        "switch-default": true,
+        "triple-equals": [true, "allow-null-check"],
+        "typedef": [true, "parameter", "property-declaration"],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-module",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+        "globals": {
+            "window": true,
+            "document": true,
+            "localStorage": true,
+            "FormData": true,
+            "FileReader": true,
+            "Blob": true,
+            "navigator": true,
+            "fetch": true,
+            "it": true
+        }
+    }
+}
